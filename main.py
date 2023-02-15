@@ -27,11 +27,11 @@ def editar_livro(id_livro: int):
 # # - Criar
 
 
-@app.post('/livros')
-def criar_livro():
-    novo_livro = Request
-    Livros.append(novo_livro)
-    return Livros
+# @app.post('/livros')
+# def criar_livro():
+#     novo_livro = Request
+#     Livros.append(novo_livro)
+#     return Livros
 
 
 # # - Excluir
