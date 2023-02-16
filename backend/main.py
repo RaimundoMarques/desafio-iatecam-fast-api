@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return "Seja Bem-vindo a API de Produtos"
+    return "API Está no AR"
 
 
 @app.get("/product")
