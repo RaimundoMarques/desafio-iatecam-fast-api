@@ -14,6 +14,10 @@ def home():
 def home_product():
     return Product
 
+@app.get("/category")
+def home_category():
+    return Category
+
 @app.get("/product/{id}")
 def product_id(id:int):
     return Product[id]
