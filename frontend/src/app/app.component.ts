@@ -10,11 +10,26 @@ import { PoMenuItem } from '@po-ui/ng-components';
 export class AppComponent {
 
   readonly menus: Array<PoMenuItem> = [
-    { label: 'Home', action: this.onClick.bind(this) }
+    { label: 'Home', action: this.clickHome.bind(this) },
+    { label: 'Gerenciamento de Categoria', action: this.clickCategory.bind(this) },
+    { label: 'Dispositivo Gestão', action: this.clickManagement.bind(this) },
+    { label: 'Sair', action: this.clickEnd.bind(this) }
   ];
 
-  private onClick() {
-    alert('Clicked in menu item')
+  private clickHome() {
+    alert('Teste de Desenvolvimento FastAPI')
+  }
+
+  private clickCategory() {
+    alert('Aplicação vai para a categoria')
+  }
+
+  private clickManagement(){
+    alert("Aplicação vai para o gerenciamento de categoria")
+  }
+
+  private clickEnd(){
+    alert("Sair da aplicação")
   }
 
 }
