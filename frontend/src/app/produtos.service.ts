@@ -12,7 +12,7 @@ export class ProdutosService {
 
   // endpoint pra trazer os produtos
   listarProdutos(): Observable<any> {
-    return this.http.get("http://localhost:8000/product");
+    return this.http.get("/api/product");
   }
 
 
