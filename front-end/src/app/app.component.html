@@ -4,20 +4,13 @@
   <po-menu [p-menus]="menus"></po-menu>
 
   <po-page-default p-title="Site exemplo">
-
-
-    <div class="container" style="border-bottom: 1px solid black;">
-      <div *ngFor="let linguagem of linguagens">
-        <p>{{linguagem.name}}</p>
-      </div>
-    </div>
-
-
+    
     <div class="container">
-      <div *ngFor="let prova of provas">
-        <p>{{prova.name}}</p>
-        <p>{{prova.short_name}}</p>
-        <p>{{prova.provas}}</p>
+      <div *ngFor="let produto of produtos">
+        <p>{{produtos.name}}</p>
+        <p>{{produtos.category}}</p>
+        <p>{{produtos.price}}</p>
+        <p>{{produtos.serie}}</p>
       </div>
     </div>
   </po-page-default>

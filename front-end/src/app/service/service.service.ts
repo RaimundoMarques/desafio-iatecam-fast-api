@@ -13,9 +13,14 @@ export class ServiceService {
   constructor(private _http: HttpClient) { }
 
   produtos = '/api/product'
+  catetorias = '/api/category'
 
   urlProdutos(): Observable<any> {
     return this._http.get(`${this.produtos}`)
+  }
+
+  urlCategory(): Observable<any> {
+    return this._http.get(`${this.catetorias}`)
   }
 
 }

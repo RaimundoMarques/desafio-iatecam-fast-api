@@ -8,9 +8,9 @@ import { PoMenuItem } from '@po-ui/ng-components';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  linguagens: any;
-  provas: any;
-
+  produtos: any;
+  categoria: any;
+  
   readonly menus: Array<PoMenuItem> = [
     { label: 'Home', action: this.clickHome.bind(this) }
   ];
@@ -24,7 +24,11 @@ export class AppComponent {
   ngOnInit(): void {
     
     this.service.urlProdutos().subscribe((res) => {
-      console.log(res);
+      console.log(res)
+    })
+
+    this.service.urlCategory().subscribe((res) => {
+      console.log(res)
     })
 
   }
