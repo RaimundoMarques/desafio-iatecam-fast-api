@@ -1,4 +1,5 @@
 import uvicorn
+
 from fastapi import FastAPI
 from bd import Product
 from bd import Category

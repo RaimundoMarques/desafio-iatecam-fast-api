@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { ProdutosService } from './produtos.service';
+
 @NgModule({
   declarations: [
     AppComponent,
