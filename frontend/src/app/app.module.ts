@@ -6,13 +6,14 @@ import { AppComponent } from './app.component';
 import { PoModule } from '@po-ui/ng-components';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { ProdutosComponent } from './produtos/produtos.component';
-import { ProdutosService } from './produtos.service';
+import { ListarProdutosComponent } from './components/produtos/listar-produtos/listar-produtos.component';
+import { CadastrarProdutosComponent } from './components/produtos/cadastrar-produtos/cadastrar-produtos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProdutosComponent
+    ListarProdutosComponent,
+    CadastrarProdutosComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +22,7 @@ import { ProdutosService } from './produtos.service';
     HttpClientModule,
     RouterModule.forRoot([])
   ],
-  providers: [ProdutosService, HttpClientModule],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
