@@ -1,1 +1,22 @@
-<p>listar-produto works!</p>
+<p class="fs-2 text-center">Produtos cadastrados</p>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Serie</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let produto of produtos">
+            <th scope="row">{{produto.id}}</th>
+            <td>{{produto.name}}</td>
+            <td>{{produto.category}}</td>
+            <td>{{produto.price}}</td>
+            <td>{{produto.serie}}</td>
+        </tr>
+    </tbody>
+</table>
