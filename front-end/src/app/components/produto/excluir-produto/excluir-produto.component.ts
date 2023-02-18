@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from 'src/app/service/service.service';
 
 @Component({
   selector: 'app-excluir-produto',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExcluirProdutoComponent implements OnInit {
 
-  constructor() { }
+  produtos: any
+
+  constructor(private service: ServiceService) { }
 
   ngOnInit(): void {
+    this.service.urlProdutos().subscribe((res) => {
+      console.log(res)
+      this.produtos = res
+    })
   }
 
 }
