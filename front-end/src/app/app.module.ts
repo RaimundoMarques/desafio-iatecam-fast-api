@@ -6,10 +6,20 @@ import { AppComponent } from './app.component';
 import { PoModule } from '@po-ui/ng-components';
 import { RouterModule } from '@angular/router';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
+import { ListarProdutoComponent } from './components/produto/listar-produto/listar-produto.component';
+import { CriarProdutoComponent } from './components/produto/criar-produto/criar-produto.component';
+import { EditarProdutoComponent } from './components/produto/editar-produto/editar-produto.component';
+import { ExcluirProdutoComponent } from './components/produto/excluir-produto/excluir-produto.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ListarProdutoComponent,
+    CriarProdutoComponent,
+    EditarProdutoComponent,
+    ExcluirProdutoComponent,
+    HomeComponent,
 
   ],
   imports: [

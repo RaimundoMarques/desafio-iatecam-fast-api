@@ -1,16 +1,18 @@
 <div class="po-wrapper">
-  <po-toolbar p-title="Página de teste"></po-toolbar>
+  <po-toolbar p-title="Página de teste - PYTHON"></po-toolbar>
 
   <po-menu [p-menus]="menus"></po-menu>
 
-  <po-page-default p-title="Site exemplo">
-    
+  
+
+  <po-page-default p-title="Gerenciamento de Produtos">
+
     <div class="container">
       <div *ngFor="let produto of produtos">
-        <p>{{produtos.name}}</p>
-        <p>{{produtos.category}}</p>
-        <p>{{produtos.price}}</p>
-        <p>{{produtos.serie}}</p>
+        <p>{{produto.name}}</p>
+        <p>{{produto.category}}</p>
+        <p>{{produto.price}}</p>
+        <p>{{produto.serie}}</p>
       </div>
     </div>
   </po-page-default>
