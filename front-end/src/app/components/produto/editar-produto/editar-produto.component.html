@@ -1,1 +1,21 @@
-<p>editar-produto works!</p>
+<p class="fs-3">Escolha um produto para editar  </p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Serie</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let produto of produtos">
+            <th scope="row"> <input type="checkbox" name="" id="{{produto.id}}"> </th>
+            <td>{{produto.name}}</td>
+            <td>{{produto.category}}</td>
+            <td>{{produto.price}}</td>
+            <td>{{produto.serie}}</td>
+        </tr>
+    </tbody>
+</table>

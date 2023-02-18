@@ -1,1 +1,32 @@
-<p>criar-produto works!</p>
+<p class="fs-3">Criar Produtos</p>
+
+<form class="form-control">
+
+    <div class="row">
+        <div class="col-sm-3">
+            <label for="inputNome" class="form-label">Produto</label>
+            <input name="nome" type="text" class="form-control" id="inputNome" placeholder="Nome">
+        </div>
+
+        <div class="col-sm-3">
+            <label for="inputPreco" class="form-label">Preço</label>
+            <input name="preco" type="number" class="form-control" id="inputPreco" placeholder="R$">
+        </div>
+
+        <div class="col-sm-3">
+            <label for="inputSerie" class="form-label">Série</label>
+            <input name="serie" type="number" class="form-control" id="inputSerie" placeholder="Números">
+        </div>
+
+        <div class="col-sm-3">
+            <label for="inputCategoria" class="form-label">Categoria</label>
+            <select id="inputState" class="form-select" name="category">
+                <option selected>...</option>
+                <option *ngFor="let catego of category" value="">{{catego.name}}</option>
+            </select>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary p-2 mt-2">Cadastrar</button>
+
+</form>

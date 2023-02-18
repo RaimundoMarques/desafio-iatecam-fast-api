@@ -33,7 +33,14 @@ Product = [
         'category': 'Adesivos',
         'price': 7,
         'serie': 963258
-    }
+    },
+    {
+        'id': 6,
+        'name': 'Conector',
+        'category': 'Componentes',
+        'price': 2,
+        'serie': 159753
+    },
 ]
 
 

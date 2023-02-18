@@ -11,6 +11,7 @@ import { CriarProdutoComponent } from './components/produto/criar-produto/criar-
 import { EditarProdutoComponent } from './components/produto/editar-produto/editar-produto.component';
 import { ExcluirProdutoComponent } from './components/produto/excluir-produto/excluir-produto.component';
 import { HomeComponent } from './components/home/home.component';
+import { CategoryComponent } from './components/category/category.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HomeComponent } from './components/home/home.component';
     EditarProdutoComponent,
     ExcluirProdutoComponent,
     HomeComponent,
+    CategoryComponent,
 
   ],
   imports: [

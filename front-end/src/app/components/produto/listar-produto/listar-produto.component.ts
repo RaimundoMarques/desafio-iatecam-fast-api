@@ -6,10 +6,9 @@ import { ServiceService } from 'src/app/service/service.service';
   templateUrl: './listar-produto.component.html',
   styleUrls: ['./listar-produto.component.css']
 })
+
 export class ListarProdutoComponent implements OnInit {
   produtos: any;
-  categoria: any;
-
 
   constructor(private service: ServiceService) { }
 
@@ -19,11 +18,5 @@ export class ListarProdutoComponent implements OnInit {
       console.log(res)
       this.produtos = res
     })
-
-    this.service.urlCategory().subscribe((res) => {
-      console.log(res)
-    })
-
   }
-
 }

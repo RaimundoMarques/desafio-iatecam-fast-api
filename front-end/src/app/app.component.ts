@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ServiceService } from './service/service.service';
 import { PoMenuItem } from '@po-ui/ng-components';
 
 @Component({
@@ -25,18 +24,23 @@ export class AppComponent {
   }
   private lsProd() {
     console.log("Listando os produtos")
+    window.location.href = '/listar-produto'
   }
   private newProd() {
     console.log("Criando um produto")
+    window.location.href = '/criar-produto'
   }
   private editProd() {
     console.log("Editando um produto")
+    window.location.href = '/editar-produto'
   }
   private exclProd() {
     console.log("Escluindo um produto")
+    window.location.href = '/excluir-produto'
   }
 
   private close() {
-
+    alert("Saindo da Aplicação")
+    window.location.href = "https://www.google.com.br/"
   }
 }

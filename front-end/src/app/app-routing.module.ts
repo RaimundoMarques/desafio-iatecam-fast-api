@@ -6,6 +6,7 @@ import { ListarProdutoComponent } from './components/produto/listar-produto/list
 import { EditarProdutoComponent } from './components/produto/editar-produto/editar-produto.component';
 import { CriarProdutoComponent } from './components/produto/criar-produto/criar-produto.component';
 import { ExcluirProdutoComponent } from './components/produto/excluir-produto/excluir-produto.component';
+import { CategoryComponent } from './components/category/category.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}, 
